@@ -11,7 +11,7 @@ public class Main {
 		int trapping = 0;
 		do {
 			try {
-				System.out.println("Student Record Management App v1\n\nSelection Menu:\n-----------------------------------\n1. Create Student Record\n2. Exit\n-------------------------------------\n\nEnter Selection: ");
+				System.out.println("Student Record Management App v1\n\nSelection Menu:\n-----------------------------------\n1. Create Student Record\n0. Exit\n-------------------------------------\n\nEnter Selection: ");
 				switch(input = object.sc.nextInt()) {
 				case 1:
 					object.enterDetails();
