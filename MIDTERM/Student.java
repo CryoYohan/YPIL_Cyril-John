@@ -3,12 +3,12 @@ import java.util.Scanner;
 public class Student {
 	Scanner sc = new Scanner(System.in);
 	int studID, age, yearLvl;
-	String fname = "";
-	String mname= "";
-	String lname= "";
-	String suffix= "";
-	String email= "";
-	String phoneNum = " ";
+	private String fname = "";
+	private String mname= "";
+	private String lname= "";
+	private String suffix= "";
+	private String email= "";
+	private String phoneNum = " ";
 	
 	public Student() {}
 	public Student(int studID, String fname, String mname, String lname, String suffix, int age, int yearLvl, String phoneNum, String email) {
@@ -49,8 +49,7 @@ public class Student {
 	}
 	public void setemail(String email) {
 		this.email = email;
-	}
-	
+	}	
 	// getters
 	public int getStudID() {
 		return studID;
@@ -80,5 +79,10 @@ public class Student {
 		return email;
 	}
 	
-
+	public String toString(Course course) {
+			return "\n\nStudent Profile Details:\n"
+			+ "Student ID No.: " + this.studID + 
+			"\nFirst Name: " + this.fname  + 
+			"\nMiddle Name: " + this.mname + "\nLast Name: " +this.lname+ "\nSuffix: " + this.suffix + "\nAge: " + this.age + "\nYear Level: " + this.yearLvl + "\nPhone Number: " + this.phoneNum + "\nEmail: " + this.email + "\n" + course.toString();
+	}
 }
